@@ -1,9 +1,10 @@
 import { ArrowRight, Play } from 'lucide-react'
 
+const APP_URL = 'https://gentle-river-07aea5210.3.azurestaticapps.net'
+
 export default function Hero() {
   return (
     <section className="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
-      {/* Gradient background effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-accent/5 rounded-full blur-[120px]" />
         <div className="absolute top-40 right-0 w-[400px] h-[400px] bg-electric/8 rounded-full blur-[100px]" />
@@ -32,14 +33,14 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="#pricing"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-accent text-midnight font-semibold text-base hover:bg-accent-bright transition-all hover:shadow-[0_0_30px_rgba(0,212,170,0.3)]"
+              href={APP_URL}
+              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-accent text-midnight font-semibold text-base hover:bg-accent-bright transition-all hover:shadow-[0_0_30px_rgba(5,113,186,0.4)]"
             >
               Start for free
               <ArrowRight size={18} />
             </a>
             <a
-              href="#platform"
+              href={`${APP_URL}/dashboard`}
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-border text-text-primary font-medium text-base hover:bg-surface transition-colors"
             >
               <Play size={16} className="text-accent" />
@@ -61,7 +62,6 @@ export default function Hero() {
               <div className="flex-1 text-center text-xs text-text-muted">mcloud.multitech.com</div>
             </div>
             <div className="p-6 md:p-8 space-y-6">
-              {/* Top stats row */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {[
                   { label: 'Gateways Online', value: '1,247', change: '+12', color: 'text-green-400' },
@@ -76,7 +76,6 @@ export default function Hero() {
                   </div>
                 ))}
               </div>
-              {/* Chart area placeholder */}
               <div className="bg-deep rounded-xl p-6 border border-border/30">
                 <div className="flex items-center justify-between mb-4">
                   <p className="text-sm font-medium">Network Telemetry</p>
@@ -97,16 +96,15 @@ export default function Hero() {
                   })}
                 </div>
               </div>
-              {/* Device list preview */}
               <div className="bg-deep rounded-xl border border-border/30 overflow-hidden">
                 <div className="px-4 py-3 border-b border-border/30 flex items-center justify-between">
                   <p className="text-sm font-medium">Recent Activity</p>
                   <span className="text-xs text-accent">View all</span>
                 </div>
                 {[
-                  { device: 'MTCAP3-L4G2D-A23UEA-LUM-0047', event: 'Gateway check-in', time: '2m ago', status: 'online' },
-                  { device: 'RBS301-TH-1293', event: 'Temperature: 72.4°F', time: '3m ago', status: 'online' },
-                  { device: 'MTCDT-L4N1-247A-915.R3-US-0012', event: 'Firmware updated to v6.0.2', time: '8m ago', status: 'online' },
+                  { device: 'MTCAP3-L4G2D-0047', event: 'Gateway check-in', time: '2m ago', status: 'online' },
+                  { device: 'RBS301-TH-1293', event: 'Temperature: 72.4\u00b0F', time: '3m ago', status: 'online' },
+                  { device: 'MTCDT3AC-0012', event: 'Firmware updated to v6.0.2', time: '8m ago', status: 'online' },
                 ].map((r, i) => (
                   <div key={i} className="px-4 py-3 flex items-center justify-between border-b border-border/20 last:border-0">
                     <div className="flex items-center gap-3">

@@ -1,5 +1,7 @@
 import { ArrowRight } from 'lucide-react'
 
+const APP_URL = 'https://gentle-river-07aea5210.3.azurestaticapps.net'
+
 export default function CTA() {
   return (
     <section className="py-24 md:py-32">
@@ -17,14 +19,14 @@ export default function CTA() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="#"
-                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-accent text-midnight font-semibold hover:bg-accent-bright transition-all hover:shadow-[0_0_30px_rgba(0,212,170,0.3)]"
+                href={APP_URL}
+                className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-accent text-midnight font-semibold hover:bg-accent-bright transition-all hover:shadow-[0_0_30px_rgba(5,113,186,0.4)]"
               >
                 Create free account
                 <ArrowRight size={18} />
               </a>
               <a
-                href="#"
+                href={APP_URL}
                 className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-border text-text-primary font-medium hover:bg-surface-light transition-colors"
               >
                 Talk to sales
