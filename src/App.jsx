@@ -7,6 +7,7 @@ import Hardware from './components/Hardware'
 import Stats from './components/Stats'
 import Solutions from './components/Solutions'
 import Pricing from './components/Pricing'
+import Migration from './components/Migration'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
 
@@ -22,6 +23,7 @@ export default function App() {
       <Stats />
       <Solutions />
       <Pricing />
+      <Migration />
       <CTA />
       <Footer />
     </div>
