@@ -104,9 +104,9 @@ export default function Hero() {
                   <span className="text-xs text-accent">View all</span>
                 </div>
                 {[
-                  { device: 'MTCAP3-L4G2D-0047', event: 'Gateway check-in', time: '2m ago', status: 'online' },
+                  { device: 'MTCAP3-L4G2D-A23UEA-LUM-0047', event: 'Gateway check-in', time: '2m ago', status: 'online' },
                   { device: 'RBS301-TH-1293', event: 'Temperature: 72.4°F', time: '3m ago', status: 'online' },
-                  { device: 'MTCDT3AC-0012', event: 'Firmware updated to v6.0.2', time: '8m ago', status: 'online' },
+                  { device: 'MTCDT-L4N1-247A-915.R3-US-0012', event: 'Firmware updated to v6.0.2', time: '8m ago', status: 'online' },
                 ].map((r, i) => (
                   <div key={i} className="px-4 py-3 flex items-center justify-between border-b border-border/20 last:border-0">
                     <div className="flex items-center gap-3">
